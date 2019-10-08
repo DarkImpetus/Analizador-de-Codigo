@@ -7,7 +7,7 @@ let suma = 9 + c;
 let resta = b - 7;
 let x = 1
 
-if(x >= 0)
+if( x >= 0 )
 {
     console.log("equis es mayor o igual a cero")
 }
@@ -38,6 +38,14 @@ console.log(newMensaje);
 let mensaje2 = "El 20 de enero de 2019 se dio inicio a la 3 semana nacional de tecnologia";
 let newMensaje2 = mensaje2.replace(/[a-z]{4,}/g,"*");
 console.log(newMensaje2);
+
+var letra = " \
+Y si te parece que yo estoy enamorado tuyo, \
+Eso es un invento, intuyo, no des crédito a murmullos \
+Porque casi nunca llamo para decir que te amo \
+Y más de una vez lo hice a un numero equivocado \
+Casi nunca nadie dice que yo estoy enamorado tuyo \
+";
 
 var expresion = /[A-Z][^aeiou ][a-z]+/g
 result = letra.match(expresion);
