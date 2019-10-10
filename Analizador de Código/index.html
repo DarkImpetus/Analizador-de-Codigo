@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="url.js"></script>
+    <script src="js/encriptar.js"></script>
+    <script src="js/archivo.js"></script>
+    <script src="js/buscar.js"></script>
+    <script src="js/remplazar.js"></script>
+    <script></script>
+    <script></script>
+    <title>Lenguajes y Automatas</title>
+</head>
+
+<body>
+    <div style="float: left;">
+        <div>
+            <h1>Leguajes y Automatas</h1>
+        </div>
+        <hr>
+        <!-- para cargar un archivo y poder modificar mas adelante-->
+        <h3>Escoja el código a cargar:</h3>
+        <hr>
+        <input id="fileInput" type="file" size="50" onchange="processFiles(this.files)">
+        <div id="fileOutput">
+
+        </div>
+        <hr>
+        <div>
+            <h5>BUSQUEDA</h5>
+            <!--busca toda las imaganes que contenga el archivo-->
+            <p>Busca expresiones matemáticas sencillas</p>
+            <button onclick="busquedaMatematica()">Buscar</button>
+            <p id="MuestraMate"></p>
+
+            <!--busca el cotenido title-->
+            <p>Busca expresiones booleanas</p>
+            <button onclick="busquedaBooleana()">Buscar</button>
+            <p id="MuestraBool"></p>
+
+        </div>
+        <br>
+        <hr>
+        <div>
+            <h5>REMPLAZAR</h5>
+            
+            
+            <!--busca todo los comentarios-->
+            <p>borrar todo los comentarios</p>
+            <button onclick="Reemplazar();">Borrar</button>
+            <p>Comentarios encontrados:</p>
+            <p id="explicacioncomentarios"></p>
+            <p>Código después de los cambios:</p>
+            <p id="Muestracomentario"></p>
+        </div>
+        <br>
+        <hr>
+        <div>
+            <h5>ENCRIPTAR</h5>
+            <!-- va encriptar todo lo que contenga la etiqueta parrafo-->
+            <p>el contenido de la etiqueta parrafo</p>
+            <button onclick="Encriptar()">Encriptar</button>
+            <p>Cadenas encontradas:</p>
+            <p id="explicacionencripta"></p>
+            <p>Código después de la encriptación:</p>
+            <p id="Muestraencripta"></p>
+        </div>
+    </div>
+</body>
+
+</html>
